@@ -246,3 +246,35 @@ Reason: Allows feedback to be traced to the right student and event.
 **Use Case Diagram**
 
 ![Alt text](image/usecase.jpg)
+
+**Data Validation**
+
+**Frontend Validation**
+
+1. Event Selection Check
+
+-Ensures that the user selected an event from the table.
+
+-Checks that the event is not already registered.
+
+-If the check fails, it shows an error message.
+
+2. User Feedback Alerts
+
+-showError(...): Shows error alerts if validation fails.
+
+-showInfo(...): Shows success confirmation messages.
+
+**Backend Validation**
+
+1. Student ID & Event ID Validation
+
+-The backend should check if the student ID and event ID exist.
+
+-If missing or invalid, return an error (HTTP 400 or 404).
+
+2. Duplicate Registration Check
+
+-The backend should query if the student is already registered for the event.
+
+-Prevents multiple registrations for the same event.
