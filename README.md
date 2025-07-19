@@ -82,7 +82,7 @@ By using these third-party services, our system becomes more useful and user-fri
 
 **Backend Application**
 
-Technology Stack: The framework that we use in this project is PHP with sql.
+Technology Stack: The framework that we use in this project is PHP with phpMyAdmin SQL.
 
 **API Documentation**
 
@@ -123,4 +123,62 @@ PUT
 DELETE
 
 -http://localhost/ems-api/organizerService/deleteEvent.php
+
+
+**Frontend Applications**
+
+**Frontend 1: Student Dashboard Application
+Purpose**
+
+This app is designed specifically for students to:
+
+-View available events
+
+-Register for events
+
+-See a list of events they’ve already registered
+
+-Submit feedback
+
+It's a personalized interface that helps students keep track of their campus activities and event participation.
+
+**API Integration**
+
+The student app communicates with the backend PHP API via HTTP requests.
+
+StudentService is used to:
+
+-Get the list of available events
+
+-Get the student’s registered events
+
+-Register the student for a selected event
+
+**Frontend 2: Organizer Dashboard Application**
+
+Purpose
+
+This app is intended for event organizers or admins. Their tasks likely include:
+
+-Creating and managing events
+
+-Viewing student registration lists
+
+-Updating or cancelling events
+
+**API Integration**
+
+The organizer app likely communicates with endpoints like:
+
+organizerService/registerOrganizer.php
+
+organizerService/createEvent.php
+
+**Technology Stack**
+
+-JavaFX: For building the graphical user interface (GUI)
+
+-Java (Standard Edition): Core language
+
+-HTTP & JSON: For making API calls to the organizer-side PHP backend
 
