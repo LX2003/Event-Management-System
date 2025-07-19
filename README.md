@@ -196,11 +196,13 @@ organizerService/createEvent.php
 The database is structured to separate different roles and responsibilities while keeping the data organized, scalable, and secure. It’s designed to support common features in an event management system such as user login, student registration, event creation, and feedback collection.
 
 1. Users Table
+
 Purpose: Stores basic login information (like name, email, password).
 
 Reason: Both students and organizers are users, so this table avoids duplication and centralizes authentication.
 
 2. Students Table
+
 Purpose: Stores student-specific info (student number, course).
 
 Relationship: Linked to Users using user_id.
@@ -208,6 +210,7 @@ Relationship: Linked to Users using user_id.
 Reason: Keeps student data separate from general user data. This allows adding more student-only features in the future.
 
 3. Organizers Table
+
 Purpose: Stores organizer-specific data (organization, phone).
 
 Relationship: Also linked to Users via user_id.
@@ -215,6 +218,7 @@ Relationship: Also linked to Users via user_id.
 Reason: Just like students, organizers need their own profile and control over event management.
 
 4. Events Table
+
 Purpose: Stores all event details (title, date, location, capacity).
 
 Relationship: Linked to Organizers via organizer_id.
@@ -222,6 +226,7 @@ Relationship: Linked to Organizers via organizer_id.
 Reason: Every event must be created and managed by an organizer.
 
 5. Registrations Table
+
 Purpose: Tracks which students signed up for which events, including their registration status.
 
 Relationship: Connects Students and Events.
@@ -229,6 +234,7 @@ Relationship: Connects Students and Events.
 Reason: A student can join many events, and each event can have many students — this is a many-to-many relationship, handled through this table.
 
 6. Feedback Table
+
 Purpose: Stores ratings that students give after attending events.
 
 Relationship: Links back to both Students and Events.
