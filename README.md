@@ -76,3 +76,109 @@ https://nominatim.openstreetmap.org/search?q=" + encoded + "&format=json&limit=1
 
 By using these third-party services, our system becomes more useful and user-friendly, giving students clear directions to events and helping organizers plan better.
 
+**System Architecture**
+
+![Alt text](image/blockDiagram.jpg)
+
+**Backend Application**
+
+Technology Stack: The framework that we use in this project is PHP with phpMyAdmin SQL.
+
+**API Documentation**
+
+List of all API endpoints (HTTP method)
+
+GET
+
+-http://localhost/ems-api/organizerService/listEvents.php?organizer_id=?
+
+-http://localhost/ems-api/organizerService/getFeedback.php?event_id=?
+
+-http://localhost/ems-api/studentService/myEvents.php?student_id=?
+
+-http://localhost/ems-api/studentService/getAvailableEvents.php?student_id=?
+
+-http://localhost/ems-api/studentService/registeredEvents.php?student_id=?
+
+-http://localhost/ems-api/studentService/pastEvents.php?student_id=?
+
+POST
+
+-http://localhost/ems-api/login.php 
+
+-http://localhost/ems-api/studentService/registerStudent.php
+
+-http://localhost/ems-api/organizerService/registerOrganizer.php
+
+-http://localhost/ems-api/organizerService/createEvents.php
+
+-http://localhost/ems-api/studentService/submitFeedbacks.php
+
+-http://localhost/ems-api/studentService/registerEvents.php
+
+PUT
+
+-http://localhost/ems-api/organizerService/updateEvent.php
+
+DELETE
+
+-http://localhost/ems-api/organizerService/deleteEvent.php
+
+
+**Frontend Applications**
+
+**Frontend 1: Student Dashboard Application
+Purpose**
+
+This app is designed specifically for students to:
+
+-View available events
+
+-Register for events
+
+-See a list of events they’ve already registered
+
+-Submit feedback
+
+It's a personalized interface that helps students keep track of their campus activities and event participation.
+
+**API Integration**
+
+The student app communicates with the backend PHP API via HTTP requests.
+
+StudentService is used to:
+
+-Get the list of available events
+
+-Get the student’s registered events
+
+-Register the student for a selected event
+
+**Frontend 2: Organizer Dashboard Application**
+
+Purpose
+
+This app is intended for event organizers or admins. Their tasks likely include:
+
+-Creating and managing events
+
+-Viewing student registration lists
+
+-Updating or cancelling events
+
+**API Integration**
+
+The organizer app likely communicates with endpoints like:
+
+organizerService/registerOrganizer.php
+
+organizerService/createEvent.php
+
+**Technology Stack**
+
+-JavaFX: For building the graphical user interface (GUI)
+
+-Java (Standard Edition): Core language
+
+-HTTP & JSON: For making API calls to the organizer-side PHP backend
+
