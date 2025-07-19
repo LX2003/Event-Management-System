@@ -69,7 +69,7 @@ Example:
 https://maps.googleapis.com/maps/api/staticmap?center=%s&zoom=15&size=600x300&markers=color:red|%s&key=%s
 
 Nominatim OpenStreetMap API
-We also used the Nominatim OpenStreetMap API, which is a free service that helps convert place names or addresses into coordinates (latitude and longitude). This helps us map events or show them on a custom campus map in the system.
+We also used the Nominatim OpenStreetMap API, which is a free service that helps convert place names or addresses into coordinates (latitude and longitude). This helps us map events or show them on a custom map in the system.
 
 Example:
 https://nominatim.openstreetmap.org/search?q=" + encoded + "&format=json&limit=1
@@ -140,7 +140,7 @@ This app is designed specifically for students to:
 
 -Submit feedback
 
-It's a personalized interface that helps students keep track of their campus activities and event participation.
+It's a personalized interface that helps students keep track of their event participation.
 
 **API Integration**
 
@@ -181,4 +181,54 @@ organizerService/createEvent.php
 -Java (Standard Edition): Core language
 
 -HTTP & JSON: For making API calls to the organizer-side PHP backend
+
+**Database Design**
+
+![Alt text](image/erd.jpg)
+
+The database is structured to separate different roles and responsibilities while keeping the data organized, scalable, and secure. It’s designed to support common features in an event management system such as user login, student registration, event creation, and feedback collection.
+
+1. Users Table
+Purpose: Stores basic login information (like name, email, password).
+
+Reason: Both students and organizers are users, so this table avoids duplication and centralizes authentication.
+
+2. Students Table
+Purpose: Stores student-specific info (student number, course).
+
+Relationship: Linked to Users using user_id.
+
+Reason: Keeps student data separate from general user data. This allows adding more student-only features in the future.
+
+3. Organizers Table
+Purpose: Stores organizer-specific data (organization, phone).
+
+Relationship: Also linked to Users via user_id.
+
+Reason: Just like students, organizers need their own profile and control over event management.
+
+4. Events Table
+Purpose: Stores all event details (title, date, location, capacity).
+
+Relationship: Linked to Organizers via organizer_id.
+
+Reason: Every event must be created and managed by an organizer.
+
+5. Registrations Table
+Purpose: Tracks which students signed up for which events, including their registration status.
+
+Relationship: Connects Students and Events.
+
+Reason: A student can join many events, and each event can have many students — this is a many-to-many relationship, handled through this table.
+
+6. Feedback Table
+Purpose: Stores ratings that students give after attending events.
+
+Relationship: Links back to both Students and Events.
+
+Reason: Allows feedback to be traced to the right student and event.
+
+**Business Logic and Data Validation**
+
+**Use Case Diagram**
 
