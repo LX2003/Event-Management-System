@@ -1,0 +1,164 @@
+{
+    "sayHello": "Hellooo Duniaaa",
+    "intQty": "5",
+    "dblPrice1": "150.5",
+	"arrStudent": [
+	        {
+	            "course": "BITS",
+	            "studname": "Alberto",
+	            "age": "17"
+	        },
+	        {
+	            "course": "BITD",
+	            "studname": "Suharto",
+	            "age": "18"
+	        },
+	        {
+	            "course": "BITI",
+	            "studname": "Najib",
+	            "age": "20"
+	        }
+	    ],
+	"arrUsers": [
+	    {
+	        "login": "mhn",
+	        "firstname": "hariz",
+	        "lastname": "Admin",
+	        "type": "User",
+	        "language": "en"
+	    },
+	    {
+		    "login": "",
+	        "firstname": "",
+	        "lastname": "Anonymous users",
+	        "type": "GroupAnonymous",
+	        "language": ""
+		},
+	    {
+	        "login": "",
+	        "firstname": "",
+	        "lastname": "Non member users",
+	        "type": "GroupNonMember",
+	        "language": ""
+	    },
+	    {
+	        "login": "",
+	        "firstname": "",
+	        "lastname": "Anonymous",
+	        "type": "AnonymousUser",
+	        "language": ""
+	    },
+	    {
+	        "login": "ctwardatulsakinah",
+		        "firstname": "Siti Wardatul",
+	        "lastname": "Sakinah",
+	        "type": "User",
+	        "language": "en"
+	    },
+		{
+	        "login": "syiera",
+	        "firstname": "syiera",
+	        "lastname": "nazreen",
+	        "type": "User",
+	        "language": "en"
+	    },
+	    {
+	        "login": "balakumaran",
+	        "firstname": "Balakumaran",
+	       "lastname": "Nehrudevan",
+		        "type": "User",
+	        "language": "en"
+	    },
+	    {
+	        "login": "yuyuyuyusrina",
+	        "firstname": "farah yusrina",
+	        "lastname": "muhammad",
+	        "type": "User",
+	        "language": "en"
+	    },
+	    {
+	        "login": "sitinornabilah",
+	        "firstname": "Siti Nor Nabilah",
+	        "lastname": "Abdullah",
+	        "type": "User",
+	        "language": "en"
+	    },
+	    {
+	        "login": "fahmi",
+	        "firstname": "fahmi",
+	        "lastname": "saad",
+	        "type": "User",
+	        "language": "en"
+	    },
+	    {
+	        "login": "adeenazudeen",
+	        "firstname": "Mohd",
+	        "lastname": "Azudeen Masdan",
+	        "type": "User",
+	        "language": "en"
+	    },
+	    {
+	        "login": "BedahMokh",
+	        "firstname": "Su'aidah ",
+	        "lastname": "Mokhtar",
+	        "type": "User",
+	        "language": "en"
+	    },
+	    {
+	        "login": "bits123",
+	        "firstname": "Atiqah",
+	        "lastname": "Rosli",
+	        "type": "User",
+	        "language": "en"
+	    },
+	    {
+	        "login": "waya",
+	        "firstname": "siti",
+	        "lastname": "ruhaya",
+	        "type": "User",
+	        "language": "en"
+	    },
+	    {
+	        "login": "azlili",
+	        "firstname": "azlili",
+	        "lastname": "rasid",
+	        "type": "User",
+	        "language": "en"
+	    },
+	    {
+	        "login": "aina",
+	        "firstname": "nur aina",
+	        "lastname": "norazmi",
+	        "type": "User",
+	        "language": "en"
+	    },
+		{
+		      "login": "tankl00",
+		      "firstname": "Tan",
+		      "lastname": "Kae Le",
+		      "type": "User",
+		      "language": "en"
+		    },
+		    {
+		      "login": "loke",
+		      "firstname": "Loke ",
+		      "lastname": "Kien Bin",
+		      "type": "User",
+		      "language": "en"
+		    },
+		    {
+		      "login": "adibu",
+		      "firstname": "muhammad",
+		      "lastname": "adib",
+		      "type": "User",
+		      "language": "en"
+		    },
+		    {
+		      "login": "cescdunno",
+		      "firstname": "chai",
+		      "lastname": "yat hong",
+		      "type": "User",
+		      "language": "en"
+		    }
+		  ]
+		}

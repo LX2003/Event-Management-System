@@ -1,0 +1,37 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36" version="27.1.6">
+  <diagram name="Page-1" id="27DoSphaVUH-7T0kbEwq">
+    <mxGraphModel dx="1281" dy="527" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="lKyZhARGYouICL-nQ-12-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="lKyZhARGYouICL-nQ-12-1" target="lKyZhARGYouICL-nQ-12-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lKyZhARGYouICL-nQ-12-1" value="Student (frontend)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="365" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lKyZhARGYouICL-nQ-12-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="lKyZhARGYouICL-nQ-12-5" target="lKyZhARGYouICL-nQ-12-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lKyZhARGYouICL-nQ-12-5" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;-view event&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;- register event&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;-submit feedback&lt;/font&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="353" y="200" width="145" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lKyZhARGYouICL-nQ-12-2" value="Event Management System (Java GUI Interface layer)" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="353" y="140" width="145" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lKyZhARGYouICL-nQ-12-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="lKyZhARGYouICL-nQ-12-8" target="lKyZhARGYouICL-nQ-12-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lKyZhARGYouICL-nQ-12-8" value="Backend API (PHP)&lt;div&gt;&lt;div&gt;-Handles requests from frontend&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- Manages business logic&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- Validates and processes data&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="328" y="340" width="194.5" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lKyZhARGYouICL-nQ-12-10" value="Database&lt;div&gt;-Event Info&lt;/div&gt;&lt;div&gt;- user &amp;amp; role&lt;/div&gt;&lt;div&gt;-Feedback&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="316" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lKyZhARGYouICL-nQ-12-12" value="Third party-API&lt;div&gt;-Google Maps&lt;/div&gt;&lt;div&gt;-OpenStreetMap (Nominatim)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

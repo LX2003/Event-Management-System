@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Map Viewer</title>
+    <meta charset="utf-8" />
+    <style>
+      html, body, #map {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+
+    <script>
+      let map;
+      let geocoder;
+
+      // Called once map is loaded
+      function initMap() {
+        geocoder = new google.maps.Geocoder();
+        map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 15,
+          center: { lat: 2.2, lng: 102.25 }
+        });
+
+        // Notify JavaFX that the map is ready
+        if (window.java && typeof window.java.mapReady === 'function') {
+          window.java.mapReady();
+        }
+      }
+
+      // Define setLocation globally
+      function setLocation(address) {
+        if (!geocoder || !map) {
+          alert("Map not ready yet.");
+          return;
+        }
+
+        geocoder.geocode({ address: address }, (results, status) => {
+          if (status === "OK") {
+            const loc = results[0].geometry.location;
+            map.setCenter(loc);
+            new google.maps.Marker({ map, position: loc });
+
+            if (window.java) {
+              window.java.locationInfo(loc.lat(), loc.lng(), results[0].formatted_address);
+            }
+          } else {
+            alert("Could not find location: " + status);
+          }
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcXluf4TUf36EQBVlYCgb7wO580gBHOUs&callback=initMap">
+    </script>
+  </body>
+</html>
