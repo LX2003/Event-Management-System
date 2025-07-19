@@ -232,3 +232,4 @@ Reason: Allows feedback to be traced to the right student and event.
 
 **Use Case Diagram**
 
+![Alt text](image/usecase.jpg)
