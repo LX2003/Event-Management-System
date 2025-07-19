@@ -124,6 +124,13 @@ DELETE
 
 -http://localhost/ems-api/organizerService/deleteEvent.php
 
+Example Success using POSTMAN
+
+![Alt text](image/exampleSuccess.png)
+
+Example Error
+
+![Alt text](image/exampleError.png)
 
 **Frontend Applications**
 
