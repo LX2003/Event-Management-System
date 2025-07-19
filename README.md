@@ -86,4 +86,41 @@ Technology Stack: The framework that we use in this project is PHP with sql.
 
 **API Documentation**
 
+List of all API endpoints (HTTP method)
+
+GET
+
+-http://localhost/ems-api/organizerService/listEvents.php?organizer_id=?
+
+-http://localhost/ems-api/organizerService/getFeedback.php?event_id=?
+
+-http://localhost/ems-api/studentService/myEvents.php?student_id=?
+
+-http://localhost/ems-api/studentService/getAvailableEvents.php?student_id=?
+
+-http://localhost/ems-api/studentService/registeredEvents.php?student_id=?
+
+-http://localhost/ems-api/studentService/pastEvents.php?student_id=?
+
+POST
+
+-http://localhost/ems-api/login.php 
+
+-http://localhost/ems-api/studentService/registerStudent.php
+
+-http://localhost/ems-api/organizerService/registerOrganizer.php
+
+-http://localhost/ems-api/organizerService/createEvents.php
+
+-http://localhost/ems-api/studentService/submitFeedbacks.php
+
+-http://localhost/ems-api/studentService/registerEvents.php
+
+PUT
+
+-http://localhost/ems-api/organizerService/updateEvent.php
+
+DELETE
+
+-http://localhost/ems-api/organizerService/deleteEvent.php
 
