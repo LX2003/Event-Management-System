@@ -76,3 +76,14 @@ https://nominatim.openstreetmap.org/search?q=" + encoded + "&format=json&limit=1
 
 By using these third-party services, our system becomes more useful and user-friendly, giving students clear directions to events and helping organizers plan better.
 
+**System Architecture**
+
+![Alt text](image/blockDiagram.jpg)
+
+**Backend Application**
+
+Technology Stack: The framework that we use in this project is PHP with sql.
+
+**API Documentation**
+
+
