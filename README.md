@@ -191,7 +191,7 @@ organizerService/createEvent.php
 
 **Database Design**
 
-![Alt text](image/erd.jpg)
+![Alt text](image/ERD.png)
 
 The database is structured to separate different roles and responsibilities while keeping the data organized, scalable, and secure. It’s designed to support common features in an event management system such as user login, student registration, event creation, and feedback collection.
 
