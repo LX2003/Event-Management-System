@@ -104,6 +104,8 @@ GET
 
 -http://localhost/ems-api/organizerService/getFeedback.php?event_id=?
 
+-http://localhost/ems-api/organizerService/exportParticipants.php?event_id=?
+
 -http://localhost/ems-api/studentService/myEvents.php?student_id=?
 
 -http://localhost/ems-api/studentService/getAvailableEvents.php?student_id=?
@@ -112,15 +114,18 @@ GET
 
 -http://localhost/ems-api/studentService/pastEvents.php?student_id=?
 
+
 POST
 
 -http://localhost/ems-api/login.php 
 
--http://localhost/ems-api/studentService/registerStudent.php
-
 -http://localhost/ems-api/organizerService/registerOrganizer.php
 
 -http://localhost/ems-api/organizerService/createEvents.php
+
+-http://localhost/ems-api/organizerService/toggleRegistration.php
+
+-http://localhost/ems-api/studentService/registerStudent.php
 
 -http://localhost/ems-api/studentService/submitFeedbacks.php
 
@@ -151,6 +156,8 @@ This app is designed specifically for students to:
 
 -View available events
 
+-View the details of the event
+
 -Register for events
 
 -See a list of events they’ve already registered
@@ -180,6 +187,8 @@ This app is intended for event organizers or admins. Their tasks likely include:
 -Creating and managing events
 
 -Viewing student registration lists
+
+-Toggle registration status
 
 -Updating or cancelling events
 
