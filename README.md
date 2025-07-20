@@ -64,7 +64,7 @@ The proposed system addresses these issues by offering a streamlined, user-frien
 
 **Commercial Value / Third-Party Integration
 
-Commercial Value**
+**Commercial Value**
 
 Our Student Event Management System has the potential to be used in real-world situations, especially by colleges and universities. Many institutions still use manual methods or different platforms like social media or spreadsheets to manage their events, which can be messy and hard to keep track of.
 
