@@ -8,6 +8,9 @@
 | B032310475  | KHAIRUL AMIRIN BIN ABDUL KUDUS |
 | B032310544  | MUHAMMAD HARITH BIN SHARIZAL |
 
+Link Presentation Video:
+https://www.youtube.com/watch?v=0KZWn2CSmOc
+
 # Event-Management-System
 **Introduction**
 
